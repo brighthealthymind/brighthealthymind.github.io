@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!-- BRAND NAME PLACEHOLDER: "Bright Healthy Minds" is the chosen brand name. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bright Healthy Minds | Online Lessons, Stories &amp; Emotional Learning for Kids 4–12</title>
+<meta name="description" content="Bright Healthy Minds offers friendly online lessons, stories, study help, emotional intelligence and life skills for kids ages 4 to 12. Lessons with quizzes, stories and emotional learning for kids. Membership $9.99/month.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bright Healthy Minds | Online Learning for Kids 4–12">
+<meta property="og:description" content="Lessons, stories, study help, emotional intelligence and life skills for curious kids. Lessons with quizzes, stories and emotional learning for kids. Membership $9.99/month.">
+<meta property="og:url" content="[Your website URL]">
+<meta property="og:image" content="[Your share image URL]">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffaf3; --ink:#2f3a4a; --muted:#5d6b7e; --brand:#ff8a5b; --brand-dk:#e8693a;
+  --sky:#e6f3ff; --mint:#e4f7ee; --sun:#fff3d1; --lav:#efe9ff; --rose:#ffe8ec; --peach:#ffeadd;
+  --radius:22px; --shadow:0 8px 24px rgba(47,58,74,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Baloo 2','Nunito',sans-serif;line-height:1.2;color:var(--ink)}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+.section-head{text-align:center;max-width:640px;margin:0 auto 40px}
+.section-head h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.eyebrow{display:inline-block;font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:var(--brand-dk);background:var(--peach);padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:999px;border:0;font-size:1rem;cursor:pointer;box-shadow:0 6px 16px rgba(255,138,91,.35);transition:transform .15s,background .15s;font-family:inherit}
+.btn:hover,.btn:focus-visible{background:var(--brand-dk);transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:#fff;color:var(--brand-dk)}
+/* header */
+header.top{position:sticky;top:0;z-index:10;background:rgba(255,250,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid #f1e6d8}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo span{color:var(--brand-dk)}
+.nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+.nav ul a{text-decoration:none;font-weight:600;color:var(--muted)}
+.nav ul a:hover{color:var(--brand-dk)}
+.nav .btn{padding:10px 20px;color:#fff}
+/* hero */
+.hero{padding:64px 0 80px;background:radial-gradient(circle at 85% 20%,var(--sun) 0,transparent 40%),radial-gradient(circle at 10% 90%,var(--sky) 0,transparent 45%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.6rem);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--brand-dk)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);margin-bottom:28px;max-width:540px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{margin-top:16px;font-size:.92rem;color:var(--muted)}
+.hero-art{position:relative;aspect-ratio:1/1;max-width:440px;justify-self:center;width:100%}
+.blob{position:absolute;inset:0;border-radius:42% 58% 55% 45%/50% 45% 55% 50%;background:linear-gradient(135deg,var(--lav),var(--mint))}
+.bubble{position:absolute;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:24px;box-shadow:var(--shadow);font-size:2.6rem}
+.b1{width:120px;height:120px;top:10%;left:12%}
+.b2{width:104px;height:104px;top:16%;right:10%;background:var(--sun)}
+.b3{width:132px;height:132px;bottom:12%;left:30%;font-size:3.2rem}
+.b4{width:92px;height:92px;bottom:30%;right:6%;background:var(--rose)}
+.b5{width:84px;height:84px;bottom:34%;left:2%;background:var(--sky)}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{padding:26px 20px}
+@media (max-width:1060px){.cards{grid-template-columns:repeat(6,1fr)}.card{grid-column:span 2}.card:nth-child(4){grid-column:2/span 2}}
+@media (max-width:640px){.cards{grid-template-columns:1fr}.card,.card:nth-child(4){grid-column:auto}}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #f3ebe0;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-bottom:16px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.98rem}
+.bg-sky{background:var(--sky)}.bg-mint{background:var(--mint)}.bg-sun{background:var(--sun)}.bg-lav{background:var(--lav)}.bg-rose{background:var(--rose)}.bg-peach{background:var(--peach)}
+/* steps */
+.alt{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}
+.step{background:var(--bg);border-radius:var(--radius);padding:32px 26px;position:relative}
+.step-num{width:46px;height:46px;border-radius:50%;background:var(--brand);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.35rem;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.step h3{font-size:1.25rem;margin-bottom:6px}
+.step p{color:var(--muted)}
+/* ages */
+.ages{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.age{border-radius:var(--radius);padding:30px 26px}
+.age .range{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:2rem}
+.age h3{font-size:1.2rem;margin:2px 0 10px}
+.age ul{list-style:none}
+.age li{padding-left:26px;position:relative;margin-bottom:6px;color:#3d4a5c}
+.age li::before{content:"✓";position:absolute;left:0;color:var(--brand-dk);font-weight:800}
+/* parents */
+.parents-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.parents-panel{background:linear-gradient(135deg,var(--peach),var(--sun));border-radius:32px;padding:40px;text-align:center}
+.parents-panel .big{font-size:4.5rem;line-height:1}
+.parents-panel p{font-family:'Baloo 2',sans-serif;font-size:1.4rem;font-weight:700;margin-top:12px}
+.why{list-style:none;display:grid;gap:16px}
+.why li{display:flex;gap:16px;background:var(--bg);border-radius:18px;padding:18px 20px}
+.why .e{font-size:1.6rem;flex-shrink:0}
+.why strong{display:block;font-size:1.05rem}
+.why span{color:var(--muted);font-size:.97rem}
+.pricing-note{margin-top:22px;display:inline-block;background:var(--lav);padding:10px 18px;border-radius:999px;font-weight:700;font-size:.95rem}
+/* form */
+.form-card{max-width:720px;margin:0 auto;background:#fff;border-radius:28px;padding:40px;box-shadow:var(--shadow);border:1px solid #f3ebe0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+label{font-weight:700;font-size:.95rem}
+input,select,textarea{font:inherit;font-size:1rem;padding:12px 14px;border:2px solid #eadfce;border-radius:14px;background:var(--bg);color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand)}
+textarea{min-height:110px;resize:vertical}
+.form-foot{margin-top:22px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.form-foot small{color:var(--muted)}
+/* footer */
+footer{background:#2f3a4a;color:#dfe5ee;padding:48px 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+footer .logo{color:#fff;margin-bottom:10px}
+footer h3{color:#fff;font-size:1.05rem;margin-bottom:10px}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+footer a{text-decoration:none;color:#dfe5ee}
+footer a:hover{color:#ffb593}
+.copy{border-top:1px solid #45526a;margin-top:32px;padding-top:20px;font-size:.9rem;color:#aab4c3;text-align:center}
+/* responsive */
+@media (max-width:900px){
+  .hero-grid,.parents-grid{grid-template-columns:1fr}
+  .hero-art{max-width:340px}
+  .steps,.ages{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav ul li:not(:last-child){display:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:56px 0}
+  .hero{padding:40px 0 56px}
+  .hero-art{max-width:280px}
+  .bubble{font-size:2rem}
+  .b1{width:88px;height:88px}.b2{width:78px;height:78px}.b3{width:100px;height:100px;font-size:2.4rem}.b4{width:68px;height:68px}.b5{width:62px;height:62px}
+  .form-card{padding:26px 20px}
+  .form-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .parents-panel{padding:30px}
+  .nav .btn{padding:9px 16px;font-size:.9rem}
+  .logo{font-size:1.15rem}
+}
+/* sample lessons */
+.chip{text-decoration:none;font-weight:700;padding:8px 16px;border-radius:999px;font-size:.95rem;transition:transform .15s}
+.chip:hover{transform:translateY(-2px)}
+.lesson{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;background:#fff;border-radius:28px;padding:36px;box-shadow:var(--shadow);border:1px solid #f3ebe0;margin-bottom:28px;align-items:start;scroll-margin-top:90px}
+.lesson-text h3{font-size:clamp(1.4rem,3vw,1.8rem);margin:12px 0 12px}
+.lesson-text p{margin-bottom:12px;color:#3d4a5c}
+.tag{display:inline-block;font-weight:700;font-size:.85rem;padding:5px 12px;border-radius:999px}
+.small-note{font-size:.9rem;color:var(--muted)!important;font-style:italic;margin-top:-6px}
+.quiz{background:var(--bg);border-radius:22px;padding:24px;border:2px dashed #f0dcc6;position:sticky;top:90px}
+.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.quiz-title{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.2rem}
+.quiz-progress{font-size:.85rem;font-weight:700;color:var(--muted)}
+.quiz-bar{height:8px;background:#f1e6d8;border-radius:99px;overflow:hidden;margin-bottom:16px}
+.quiz-bar span{display:block;height:100%;background:var(--brand);border-radius:99px;transition:width .3s}
+.quiz-q{font-weight:700;font-size:1.05rem;margin-bottom:14px}
+.quiz-opts{display:grid;gap:10px}
+.quiz-opt{display:flex;align-items:center;gap:12px;text-align:left;font:inherit;font-size:.98rem;background:#fff;border:2px solid #eadfce;border-radius:14px;padding:11px 14px;cursor:pointer;color:var(--ink);transition:border-color .15s,background .15s}
+.quiz-opt:hover:not(:disabled){border-color:var(--brand)}
+.quiz-opt:disabled{cursor:default}
+.quiz-opt .letter{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--peach);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem}
+.quiz-opt.correct{border-color:#3bb27a;background:#e4f7ee}
+.quiz-opt.correct .letter{background:#3bb27a;color:#fff}
+.quiz-opt.wrong{border-color:#e66a7a;background:#ffe8ec}
+.quiz-opt.wrong .letter{background:#e66a7a;color:#fff}
+.quiz-feedback{margin-top:16px;border-radius:16px;padding:16px 18px;background:#fff;border-left:6px solid #3bb27a}
+.quiz-feedback.no{border-left-color:#e66a7a}
+.fb-title{font-weight:800;margin-bottom:6px}
+.fb-exp{color:#3d4a5c;margin-bottom:10px;font-size:.97rem}
+.fb-hint{background:var(--sun);border-radius:12px;padding:10px 12px;font-size:.95rem;margin-bottom:14px}
+.quiz-next{padding:10px 22px}
+.quiz-result{text-align:center;padding:12px 4px}
+.quiz-result .stars{font-size:2.4rem}
+.quiz-result .score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.6rem;margin:6px 0}
+.quiz-result .msg{color:var(--muted);margin-bottom:18px}
+/* pricing */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:960px;margin:0 auto;align-items:stretch}
+.plan{background:var(--bg);border:3px solid var(--brand);border-radius:28px;padding:36px}
+.plan h3{font-size:1.45rem}
+.price{margin:10px 0 20px}
+.price .amt{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:3.2rem;color:var(--brand-dk)}
+.price .per{font-weight:700;color:var(--muted);margin-left:4px}
+.incl{list-style:none;margin-bottom:24px}
+.incl li{padding-left:28px;position:relative;margin-bottom:9px}
+.incl li::before{content:"✓";position:absolute;left:0;color:#3bb27a;font-weight:800}
+.soon{display:inline-block;background:var(--lav);font-size:.78rem;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:4px;vertical-align:1px}
+.btn-block{display:block;text-align:center}
+.fine{font-size:.88rem;color:var(--muted);margin-top:12px}
+.reward{background:linear-gradient(135deg,var(--mint),var(--sky));border-radius:28px;padding:36px}
+.reward-icon{font-size:2.8rem;line-height:1;margin-bottom:10px}
+.reward h3{font-size:1.4rem;margin-bottom:12px}
+.reward p{margin-bottom:12px}
+/* form additions */
+fieldset{border:0;min-width:0}
+legend{font-weight:700;font-size:.95rem;margin-bottom:8px}
+.interests{display:flex;flex-direction:row;flex-wrap:wrap;gap:10px}
+.check{display:inline-flex;align-items:center;gap:8px;font-weight:600;background:var(--bg);border:2px solid #eadfce;border-radius:999px;padding:7px 14px;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--brand);flex-shrink:0}
+.consent{grid-column:1/-1;border-radius:16px;align-items:flex-start;padding:12px 16px}
+.consent input{margin-top:3px}
+.consent a{color:var(--brand-dk)}
+.opt{font-weight:400;color:var(--muted)}
+.demo-note{margin-top:18px;background:var(--sun);border-radius:12px;padding:10px 14px;font-size:.92rem;font-weight:600}
+.form-msg{margin-top:14px;background:var(--mint);border-radius:12px;padding:12px 14px;font-weight:700}
+#parents .why li{background:#fff;box-shadow:var(--shadow)}
+@media (max-width:900px){
+  .lesson{grid-template-columns:1fr;padding:28px}
+  .quiz{position:static}
+  .pricing-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .lesson{padding:22px 18px;border-radius:22px}
+  .quiz{padding:18px 14px}
+  .plan,.reward{padding:26px 22px}
+}
+/* lesson library */
+.filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:-8px 0 14px}
+.filter{font:inherit;font-weight:700;font-size:.95rem;padding:9px 18px;border-radius:999px;border:2px solid #eadfce;background:#fff;color:var(--ink);cursor:pointer;transition:all .15s}
+.filter:hover{border-color:var(--brand);color:var(--brand-dk)}
+.filter.active{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 4px 12px rgba(255,138,91,.3)}
+.lib-count{text-align:center;color:var(--muted);font-size:.92rem;font-weight:600;margin-bottom:24px}
+.lib-grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.lib-item[hidden]{display:none}
+.lib-card{height:100%;display:flex;flex-direction:column;background:#fff;border-radius:var(--radius);padding:22px 20px;box-shadow:var(--shadow);border:1px solid #f3ebe0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.lib-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(47,58,74,.12)}
+.lib-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px}
+.lib-emoji{width:50px;height:50px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.lib-card h3{font-size:1.15rem;margin-bottom:6px}
+.lib-card p{color:var(--muted);font-size:.93rem;margin-bottom:12px;flex-grow:1}
+.lib-meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:14px}
+.lib-open{font:inherit;font-weight:800;font-size:.95rem;color:var(--brand-dk);background:var(--peach);border:0;border-radius:999px;padding:9px 16px;cursor:pointer;align-self:flex-start}
+.lib-card:hover .lib-open,.lib-open:focus-visible{background:var(--brand);color:#fff}
+.lib-empty{text-align:center;color:var(--muted)}
+/* modal */
+body.modal-open{overflow:hidden}
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:24px}
+.modal[hidden]{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(47,58,74,.55);backdrop-filter:blur(3px)}
+.modal-panel{position:relative;width:100%;max-width:1040px;max-height:calc(100vh - 48px);overflow-y:auto;background:#fff;border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.25);outline:none;-webkit-overflow-scrolling:touch}
+.modal-bar{position:sticky;top:0;z-index:2;display:flex;justify-content:flex-end;padding:14px 16px 0;background:linear-gradient(#fff 70%,rgba(255,255,255,0))}
+.modal-close{font:inherit;font-weight:800;font-size:.95rem;background:var(--bg);color:var(--ink);border:2px solid #eadfce;border-radius:999px;padding:8px 16px;cursor:pointer;min-height:44px}
+.modal-close:hover,.modal-close:focus-visible{border-color:var(--brand);color:var(--brand-dk)}
+.modal-body .lesson{box-shadow:none;border:0;margin:0;padding:4px 36px 36px}
+.modal-body .quiz{top:70px}
+@media (max-width:1060px){.lib-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:900px){.lib-grid{grid-template-columns:repeat(2,1fr)}.modal-body .lesson{padding:4px 28px 28px}}
+@media (max-width:560px){
+  .lib-grid{grid-template-columns:1fr;gap:14px}
+  .filters{gap:8px}.filter{padding:8px 14px;font-size:.9rem}
+  .modal{padding:0}
+  .modal-panel{max-width:none;height:100%;max-height:none;border-radius:0}
+  .modal-body .lesson{padding:0 18px 28px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="logo" href="#top" aria-label="Bright Healthy Minds home"><span aria-hidden="true">🌟</span>Bright Healthy <span>Minds</span></a>
+    <ul>
+      <li><a href="#offer">What we offer</a></li>
+      <li><a href="#lessons">Sample lessons</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#parents">For parents</a></li>
+      <li><a class="btn" href="#signup">Join now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Online learning for ages 4–12</span>
+        <h1>Helping kids grow <em>smart</em>, <em>kind</em> and confident</h1>
+        <p class="lead">Online lessons, stories, quizzes, study help and emotional intelligence, all designed to make kids curious and happy to learn.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#signup">Start membership - $9.99/mo</a>
+          <a class="btn btn-ghost" href="#lessons">Try a sample lesson</a>
+        </div>
+        <p class="hero-note">Try a free sample lesson and quiz right on this page.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Playful illustration of learning icons: a book, a star, a lightbulb, a heart and a rocket">
+        <div class="blob"></div>
+        <div class="bubble b1" aria-hidden="true">📚</div>
+        <div class="bubble b2" aria-hidden="true">⭐</div>
+        <div class="bubble b3" aria-hidden="true">💡</div>
+        <div class="bubble b4" aria-hidden="true">💛</div>
+        <div class="bubble b5" aria-hidden="true">🚀</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE OFFER -->
+  <section id="offer">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we offer</span>
+        <h2>Learning that grows the whole child</h2>
+        <p>Every session mixes knowledge, imagination and heart, so kids build skills for school and for life.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon bg-sky" aria-hidden="true">✏️</div><h3>Lessons</h3><p>Fun, bite-sized lessons in reading, math, science and the world around us.</p></article>
+        <article class="card"><div class="icon bg-sun" aria-hidden="true">📖</div><h3>Stories</h3><p>Story time with good values, big imagination and gentle life lessons.</p></article>
+        <article class="card"><div class="icon bg-mint" aria-hidden="true">🧠</div><h3>Study Help</h3><p>Friendly support with homework, study habits and focus.</p></article>
+        <article class="card"><div class="icon bg-rose" aria-hidden="true">💛</div><h3>Emotional Intelligence</h3><p>Naming feelings, calming down, empathy and making good friends.</p></article>
+        <article class="card"><div class="icon bg-lav" aria-hidden="true">🌱</div><h3>Life Skills</h3><p>Kindness, responsibility, good manners and everyday confidence.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Getting started is easy</h2>
+        <p>Three simple steps from hello to happy learning.</p>
+      </div>
+      <ol class="steps" style="list-style:none">
+        <li class="step"><div class="step-num">1</div><h3>Sign up</h3><p>A parent fills in the short form with your child's first name and age range.</p></li>
+        <li class="step"><div class="step-num">2</div><h3>Learn &amp; explore</h3><p>Your child reads lessons and stories, then tries quizzes that explain every answer.</p></li>
+        <li class="step"><div class="step-num">3</div><h3>Grow &amp; earn rewards</h3><p>Kids build skills and good habits, and can earn a monthly Kids Reward for their effort.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- LESSON LIBRARY + QUIZZES (vanilla JS at the bottom of this page opens lessons in a modal and runs the quizzes) -->
+  <section id="lessons">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Lesson library</span>
+        <h2>Try a sample lesson</h2>
+        <p>12 short lessons for ages 7 to 10. Pick one, read it together, then try the 3-question quiz. Every answer comes with an explanation.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter lessons by topic">
+        <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter" data-filter="feelings" aria-pressed="false">Feelings</button>
+        <button type="button" class="filter" data-filter="thinking" aria-pressed="false">Thinking</button>
+        <button type="button" class="filter" data-filter="stories" aria-pressed="false">Stories</button>
+        <button type="button" class="filter" data-filter="science" aria-pressed="false">Science</button>
+        <button type="button" class="filter" data-filter="math" aria-pressed="false">Math</button>
+        <button type="button" class="filter" data-filter="life" aria-pressed="false">Life Skills</button>
+      </div>
+      <p class="lib-count" id="lib-count" aria-live="polite">Showing all 12 lessons</p>
+      <ul class="lib-grid" id="lib-grid">
+        <li class="lib-item" data-cat="feelings">
+          <div class="lib-card" data-open="lesson-feelings">
+            <div class="lib-top"><span class="lib-emoji bg-rose" aria-hidden="true">💛</span><span class="tag bg-rose">Feelings</span></div>
+            <h3>Name It to Tame It: Understanding Your Feelings</h3>
+            <p>Name your feelings and learn a calm-down trick.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="thinking">
+          <div class="lib-card" data-open="lesson-thinking">
+            <div class="lib-top"><span class="lib-emoji bg-sky" aria-hidden="true">🔍</span><span class="tag bg-sky">Thinking</span></div>
+            <h3>Think Like a Detective</h3>
+            <p>Use detective steps and tell facts from opinions.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="stories">
+          <div class="lib-card" data-open="lesson-story">
+            <div class="lib-top"><span class="lib-emoji bg-sun" aria-hidden="true">🦁</span><span class="tag bg-sun">Stories</span></div>
+            <h3>The Lion and the Mouse</h3>
+            <p>A fable about kindness and helping friends.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="science">
+          <div class="lib-card" data-open="lesson-science">
+            <div class="lib-top"><span class="lib-emoji bg-mint" aria-hidden="true">🌍</span><span class="tag bg-mint">Science</span></div>
+            <h3>Why Do We Have Day and Night?</h3>
+            <p>Find out how the spinning Earth makes day and night.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="math">
+          <div class="lib-card" data-open="lesson-fractions">
+            <div class="lib-top"><span class="lib-emoji bg-lav" aria-hidden="true">🍕</span><span class="tag bg-lav">Math</span></div>
+            <h3>Fractions Are Just Fair Sharing</h3>
+            <p>Halves and quarters, explained with pizza.</p>
+            <div class="lib-meta"><span>⏱ About 6 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="life">
+          <div class="lib-card" data-open="lesson-money">
+            <div class="lib-top"><span class="lib-emoji bg-peach" aria-hidden="true">🐷</span><span class="tag bg-peach">Life Skills</span></div>
+            <h3>Money Basics: Needs vs. Wants</h3>
+            <p>Tell needs from wants, and save up for goals.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="feelings">
+          <div class="lib-card" data-open="lesson-empathy">
+            <div class="lib-top"><span class="lib-emoji bg-rose" aria-hidden="true">🤝</span><span class="tag bg-rose">Feelings</span></div>
+            <h3>Walking in Someone Else's Shoes</h3>
+            <p>Learn what empathy is and how to show you care.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="thinking">
+          <div class="lib-card" data-open="lesson-mindset">
+            <div class="lib-top"><span class="lib-emoji bg-sky" aria-hidden="true">🌱</span><span class="tag bg-sky">Thinking</span></div>
+            <h3>Mistakes Help Your Brain Grow</h3>
+            <p>Growth mindset and the power of the word "yet".</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="stories">
+          <div class="lib-card" data-open="lesson-tortoise">
+            <div class="lib-top"><span class="lib-emoji bg-sun" aria-hidden="true">🐢</span><span class="tag bg-sun">Stories</span></div>
+            <h3>The Tortoise and the Hare</h3>
+            <p>A classic race that shows why steady effort wins.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="science">
+          <div class="lib-card" data-open="lesson-plants">
+            <div class="lib-top"><span class="lib-emoji bg-mint" aria-hidden="true">🌻</span><span class="tag bg-mint">Science</span></div>
+            <h3>Why Do Plants Need Sunlight?</h3>
+            <p>How plants make their own food from sunlight.</p>
+            <div class="lib-meta"><span>⏱ About 5 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="feelings">
+          <div class="lib-card" data-open="lesson-anger">
+            <div class="lib-top"><span class="lib-emoji bg-rose" aria-hidden="true">🌋</span><span class="tag bg-rose">Feelings</span></div>
+            <h3>What to Do When You're Angry</h3>
+            <p>Cool-down tricks and calm words for big, hot feelings.</p>
+            <div class="lib-meta"><span>⏱ About 6 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+        <li class="lib-item" data-cat="thinking">
+          <div class="lib-card" data-open="lesson-online">
+            <div class="lib-top"><span class="lib-emoji bg-sky" aria-hidden="true">🕵️</span><span class="tag bg-sky">Thinking</span></div>
+            <h3>Is It True? Spotting Tricks Online</h3>
+            <p>Check facts online and keep your private info safe.</p>
+            <div class="lib-meta"><span>⏱ About 6 min</span><span>✨ 3-question quiz</span></div>
+            <button type="button" class="lib-open" aria-haspopup="dialog" aria-controls="lesson-modal">Open lesson <span aria-hidden="true">→</span></button>
+          </div>
+        </li>
+      </ul>
+      <p class="lib-empty" id="lib-empty" hidden>No lessons in this topic yet. More coming soon!</p>
+    </div>
+    <!-- Lesson content lives here and is moved into the modal when a card is opened. -->
+    <div class="lesson-store" id="lesson-store" hidden>
+      <article class="lesson" id="lesson-feelings" data-cat="feelings" aria-labelledby="title-feelings">
+        <div class="lesson-text">
+          <span class="tag bg-rose">💛 Emotional Intelligence · Ages 7–10 · About 5 min</span>
+          <h3 id="title-feelings">Name It to Tame It: Understanding Your Feelings</h3>
+          <p>Feelings are like messages from the inside of you. Happy, sad, angry, scared, excited and worried are all feelings. <strong>Every feeling is okay to have.</strong> Even grown-ups feel all of them!</p>
+          <p>Your body gives you clues about how you feel. When you are worried, your tummy might feel tight or full of butterflies. When you are angry, your face might get hot and your hands might want to squeeze. Noticing these clues helps you figure out what you are feeling.</p>
+          <p>Here's a cool trick: when you <strong>say the name of your feeling</strong>, like "I feel frustrated," that big feeling often starts to shrink a little. That's why people say "name it to tame it."</p>
+          <p>When a feeling is really big, try this: <strong>Stop. Breathe. Talk.</strong> Stop what you are doing. Take slow breaths, in through your nose like smelling a flower and out through your mouth like blowing out a candle. Then talk to someone you trust. Feelings are always okay, and we get to choose what we <em>do</em> with them.</p>
+        </div>
+        <div class="quiz" data-quiz="feelings" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-thinking" data-cat="thinking" aria-labelledby="title-thinking">
+        <div class="lesson-text">
+          <span class="tag bg-sky">🔍 Thinking Skills · Ages 7–10 · About 5 min</span>
+          <h3 id="title-thinking">Think Like a Detective</h3>
+          <p>Critical thinking means <strong>thinking carefully before you decide what is true</strong>. Detectives don't guess. They look for clues first!</p>
+          <p>Try the detective steps: <strong>1. Stop</strong> and don't rush. <strong>2. Ask questions</strong> like "How do I know?" and "Is there proof?" <strong>3. Look for clues</strong> and evidence. <strong>4. Decide</strong> on the answer that matches the clues best.</p>
+          <p>It also helps to know the difference between a <strong>fact</strong> and an <strong>opinion</strong>. A fact can be checked and shown to be true, like "A dog has four legs." An opinion is what someone thinks or feels, like "Dogs are the best pets." Opinions are fine, but they aren't the same as facts.</p>
+          <p>When you hear something surprising, like an ad saying a toy will make you "the smartest kid ever," a good thinker asks: "How do they know? What's the proof?"</p>
+        </div>
+        <div class="quiz" data-quiz="thinking" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-story" data-cat="stories" aria-labelledby="title-story">
+        <div class="lesson-text">
+          <span class="tag bg-sun">🦁 Story with a Moral · Ages 7–10 · About 5 min</span>
+          <h3 id="title-story">The Lion and the Mouse</h3>
+          <p class="small-note">A retelling of a classic fable by Aesop.</p>
+          <p>One sunny afternoon, a big lion was sleeping under a tree. A tiny mouse was scurrying by and accidentally ran right across the lion's nose! The lion woke up and caught the mouse under his giant paw.</p>
+          <p>"Please let me go!" squeaked the mouse. "If you are kind to me, maybe one day I can help you." The lion laughed. How could a tiny mouse ever help a mighty lion? But he decided to be kind, and he let the mouse go.</p>
+          <p>A few days later, the lion got trapped in a hunter's net. He roared and pulled, but the ropes only got tighter. The little mouse heard the roar and came running. She chewed and chewed through the ropes until the lion was free!</p>
+          <p>"You laughed at me," said the mouse, "but now you know that even a little mouse can help a lion." <strong>The moral: kindness is never wasted, and nobody is too small to help.</strong></p>
+        </div>
+        <div class="quiz" data-quiz="story" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-science" data-cat="science" aria-labelledby="title-science">
+        <div class="lesson-text">
+          <span class="tag bg-mint">🌍 Science Basics · Ages 7–10 · About 5 min</span>
+          <h3 id="title-science">Why Do We Have Day and Night?</h3>
+          <p>Every morning the Sun seems to rise, and every evening it seems to set. It looks like the Sun is moving across the sky, but here's the secret: <strong>it's the Earth that is moving!</strong></p>
+          <p>The Earth is always spinning, like a slow spinning top. It makes <strong>one full spin about every 24 hours</strong>, and that's what we call one day.</p>
+          <p>The Sun shines on only one half of the Earth at a time. The half facing the Sun has <strong>daytime</strong>. The half facing away from the Sun has <strong>nighttime</strong>. As the Earth spins, your home turns into the sunlight (morning) and later turns away from it (evening).</p>
+          <p>That means when it's daytime where you live, it's nighttime for kids on the other side of the world! Try it at home: shine a flashlight on a ball and slowly turn the ball to see day and night move.</p>
+        </div>
+        <div class="quiz" data-quiz="science" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-fractions" data-cat="math" aria-labelledby="title-fractions">
+        <div class="lesson-text">
+          <span class="tag bg-lav">🍕 Math · Ages 7–10 · About 6 min</span>
+          <h3 id="title-fractions">Fractions Are Just Fair Sharing</h3>
+          <p>Imagine you and a friend share a pizza. To be fair, you cut it into <strong>2 equal pieces</strong>. Each piece is <strong>one half</strong>, written as <strong>1/2</strong>. A fraction is a way of showing <strong>equal parts of a whole</strong>.</p>
+          <p>Now imagine four friends sharing one pizza. You cut it into <strong>4 equal pieces</strong>. Each piece is <strong>one quarter</strong> (or one fourth), written as <strong>1/4</strong>.</p>
+          <p>Here's how to read a fraction. The <strong>bottom number</strong> tells how many equal parts the whole is cut into. The <strong>top number</strong> tells how many of those parts you have. So 3/4 means the pizza was cut into 4 equal parts, and you have 3 of them.</p>
+          <p>Notice something? When a pizza is cut into <strong>more pieces, each piece is smaller</strong>. So 1/4 of a pizza is smaller than 1/2 of the same pizza. And <strong>2 quarters make 1 half</strong>. The word "equal" is very important: fractions are all about fair sharing!</p>
+        </div>
+        <div class="quiz" data-quiz="fractions" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-money" data-cat="life" aria-labelledby="title-money">
+        <div class="lesson-text">
+          <span class="tag bg-peach">🐷 Life Skills · Ages 7–10 · About 5 min</span>
+          <h3 id="title-money">Money Basics: Needs vs. Wants</h3>
+          <p>Money helps families buy the things they need and some of the things they want. But what's the difference?</p>
+          <p><strong>Needs</strong> are things we must have to live and stay healthy and safe, like <strong>healthy food, clean water, a home, clothes for the weather</strong> and care from a doctor when we're sick.</p>
+          <p><strong>Wants</strong> are things that are nice to have but we can live without, like toys, video games, candy or fancy light-up sneakers. Wants are fine! But smart money choices take care of <strong>needs first</strong>.</p>
+          <p>When you want something that costs more than you have, you can <strong>save</strong> a little at a time until you reach your goal. Some kids use three jars: <strong>Save</strong>, <strong>Spend</strong> and <strong>Share</strong> (for helping others). Waiting and saving for something makes getting it feel even better!</p>
+        </div>
+        <div class="quiz" data-quiz="money" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-empathy" data-cat="feelings" aria-labelledby="title-empathy">
+        <div class="lesson-text">
+          <span class="tag bg-rose">🤝 Emotional Intelligence · Ages 7–10 · About 5 min</span>
+          <h3 id="title-empathy">Walking in Someone Else's Shoes</h3>
+          <p>Have you ever heard someone say, "Try walking in someone else's shoes"? They don't mean really swapping shoes! It means <strong>imagining how another person feels</strong>. This is called <strong>empathy</strong>.</p>
+          <p>You can be a feelings detective for other people. <strong>Look</strong> at their face and body: are they smiling, frowning or sitting alone? <strong>Listen</strong> to their words and their voice. Then <strong>imagine</strong>: "How would I feel if that happened to me?"</p>
+          <p>Imagine a classmate drops their lunch tray and everyone turns to look. They might feel embarrassed. With empathy, you might help pick things up or say, "That happens to everyone. Want some help?"</p>
+          <p>Empathy doesn't mean you have to fix everything. Sometimes the kindest thing is just to <strong>listen</strong> and say, "That sounds hard. I'm here." Small acts of kindness can make a big difference to someone's day.</p>
+        </div>
+        <div class="quiz" data-quiz="empathy" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-mindset" data-cat="thinking" aria-labelledby="title-mindset">
+        <div class="lesson-text">
+          <span class="tag bg-sky">🌱 Thinking Skills · Ages 7–10 · About 5 min</span>
+          <h3 id="title-mindset">Mistakes Help Your Brain Grow</h3>
+          <p>Did you know your brain can grow stronger, a bit like a muscle? When you practice something, the connections inside your brain get stronger. That's how hard things slowly become easier!</p>
+          <p>Believing you can get better with effort and practice is called a <strong>growth mindset</strong>. Think about learning to ride a bike. At first you wobble and maybe fall. With practice, you ride without even thinking about it.</p>
+          <p>Mistakes are not a sign that you're "bad" at something. <strong>Mistakes show you what to practice next.</strong> Every time you figure out what went wrong and try again, your brain is learning.</p>
+          <p>Try adding the magic word <strong>"yet"</strong>. Instead of "I can't do fractions," say "I can't do fractions <em>yet</em>." That tiny word reminds you that you're still learning, and that's exactly how everyone gets better.</p>
+        </div>
+        <div class="quiz" data-quiz="mindset" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-tortoise" data-cat="stories" aria-labelledby="title-tortoise">
+        <div class="lesson-text">
+          <span class="tag bg-sun">🐢 Story with a Moral · Ages 7–10 · About 5 min</span>
+          <h3 id="title-tortoise">The Tortoise and the Hare</h3>
+          <p class="small-note">A retelling of a classic fable by Aesop.</p>
+          <p>Once upon a time, a speedy hare loved to show off. "I'm the fastest animal in the forest!" he bragged. "Nobody can beat me!" A tortoise, who moved slowly but surely, said calmly, "Let's have a race." The hare laughed so hard his ears flopped.</p>
+          <p>The race began. Zoom! The hare shot ahead and soon the tortoise was far behind. "This is too easy," the hare yawned. "I have plenty of time for a nap." He lay down under a shady tree and fell fast asleep.</p>
+          <p>Meanwhile, the tortoise kept going, one step at a time. He didn't stop and he didn't give up. Step, step, step. He walked right past the sleeping hare.</p>
+          <p>When the hare finally woke up, he dashed toward the finish line, but it was too late. The tortoise had already crossed it, and all the animals were cheering! <strong>The moral: slow and steady wins the race. Keep going, don't give up, and don't show off.</strong></p>
+        </div>
+        <div class="quiz" data-quiz="tortoise" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-plants" data-cat="science" aria-labelledby="title-plants">
+        <div class="lesson-text">
+          <span class="tag bg-mint">🌻 Science Basics · Ages 7–10 · About 5 min</span>
+          <h3 id="title-plants">Why Do Plants Need Sunlight?</h3>
+          <p>People and animals get energy by eating food. But plants can't go to the kitchen for a snack! Instead, plants do something amazing: <strong>they make their own food</strong>.</p>
+          <p>To make food, a plant needs three things: <strong>sunlight</strong>, <strong>water</strong> (which it drinks up through its roots) and <strong>carbon dioxide</strong>, a gas in the air that goes in through tiny holes in its leaves.</p>
+          <p>Leaves are green because they contain something called <strong>chlorophyll</strong>. Chlorophyll catches sunlight and helps turn water and carbon dioxide into sugar, the plant's food. This is called <strong>photosynthesis</strong> (foe-toe-SIN-thuh-sis).</p>
+          <p>Here's the best part: while making food, plants give off <strong>oxygen</strong>, the gas that people and animals need to breathe. That's one reason plants are so important! Try it: if a plant is kept in a dark closet for a while, it can turn pale and weak because it can't make enough food.</p>
+        </div>
+        <div class="quiz" data-quiz="plants" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-anger" data-cat="feelings" aria-labelledby="title-anger">
+        <div class="lesson-text">
+          <span class="tag bg-rose">🌋 Emotional Intelligence · Ages 7–10 · About 6 min</span>
+          <h3 id="title-anger">What to Do When You're Angry</h3>
+          <p>Everybody feels angry sometimes. Anger is a normal feeling. It often shows up when something feels <strong>unfair</strong>, when we get hurt, or when things don't go our way.</p>
+          <p>Anger has body clues too: a hot face, a fast heartbeat, tight fists or a loud voice. Think of an <strong>anger thermometer</strong>. Noticing your anger while it's still small makes it easier to cool down before it boils over.</p>
+          <p>Try a cool-down trick: take slow, deep breaths, <strong>count slowly to 10</strong>, get a drink of water, squeeze a pillow, or move to a calm spot for a few minutes. One important rule: it's okay to feel angry, but it's <strong>not okay to hurt people, yourself or things</strong>.</p>
+          <p>When you feel calmer, use your words with an <strong>"I statement"</strong>: "I feel angry when ___ because ___." For example: "I feel angry when you take my markers because I was using them." Calm words help people listen and solve the problem together.</p>
+        </div>
+        <div class="quiz" data-quiz="anger" aria-live="polite"></div>
+      </article>
+      <article class="lesson" id="lesson-online" data-cat="thinking" aria-labelledby="title-online">
+        <div class="lesson-text">
+          <span class="tag bg-sky">🕵️ Thinking Skills · Ages 7–10 · About 6 min</span>
+          <h3 id="title-online">Is It True? Spotting Tricks Online</h3>
+          <p>The internet is full of fun videos, games and facts. But here's something important: <strong>not everything online is true</strong>. Anyone can post things, and pictures and videos can be edited to look real.</p>
+          <p>Before you believe something, ask three detective questions: <strong>Who made this?</strong> <strong>Does it sound too good to be true?</strong> <strong>Can I check it with a trusted source</strong>, like a grown-up, a teacher or a good book?</p>
+          <p>Watch out for tricks like pop-ups that say "You won a prize! Click here!" These are usually trying to get you to click or share information. <strong>Don't click. Tell a trusted grown-up.</strong></p>
+          <p>Keep your private information private. Never share your <strong>full name, home address, school, phone number or passwords</strong> with strangers online. And if anything online makes you feel worried, scared or uncomfortable, it's always okay to tell a trusted grown-up. You won't be in trouble for asking for help.</p>
+        </div>
+        <div class="quiz" data-quiz="online" aria-live="polite"></div>
+      </article>
+    </div>
+  </section>
+
+  <div class="modal" id="lesson-modal" role="dialog" aria-modal="true" aria-label="Lesson" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" tabindex="-1">
+      <div class="modal-bar"><button type="button" class="modal-close" data-close aria-label="Close lesson">✕ <span>Close</span></button></div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- AGE GROUPS -->
+  <section id="ages" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Age groups</span>
+        <h2>Just right for every stage</h2>
+        <p>Classes are shaped around how kids learn at each age.</p>
+      </div>
+      <div class="ages">
+        <article class="age bg-sun"><div class="range">4–6</div><h3>Little Explorers</h3><ul><li>Stories, songs and play</li><li>Early letters and numbers</li><li>Naming and sharing feelings</li></ul></article>
+        <article class="age bg-mint"><div class="range">7–9</div><h3>Curious Learners</h3><ul><li>Reading and math confidence</li><li>Homework and study habits</li><li>Friendship and teamwork</li></ul></article>
+        <article class="age bg-lav"><div class="range">10–12</div><h3>Young Thinkers</h3><ul><li>Study skills and focus</li><li>Problem solving and projects</li><li>Handling stress and big emotions</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARENTS -->
+  <section id="parents">
+    <div class="wrap parents-grid">
+      <div class="parents-panel">
+        <div class="big" aria-hidden="true">👨‍👩‍👧</div>
+        <p>Made for parents who want more than just grades</p>
+      </div>
+      <div>
+        <span class="eyebrow">For parents</span>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:20px">Why it helps your child</h2>
+        <ul class="why">
+          <li><span class="e" aria-hidden="true">🌈</span><div><strong>Whole-child learning</strong><span>Academics, character and emotional skills, together in one place.</span></div></li>
+          <li><span class="e" aria-hidden="true">🏡</span><div><strong>Learn from home</strong><span>No commuting. Classes fit around your family's schedule.</span></div></li>
+          <li><span class="e" aria-hidden="true">🤗</span><div><strong>Safe and encouraging</strong><span>A warm space where kids feel comfortable asking questions.</span></div></li>
+          <li><span class="e" aria-hidden="true">📈</span><div><strong>Stay in the loop</strong><span>Simple updates so you know what your child is learning.</span></div></li>
+        </ul>
+        <a class="pricing-note" href="#pricing" style="text-decoration:none">💬 See membership &amp; Kids Reward →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING: payments are NOT live. Connect a payment processor (e.g. Stripe) before taking real money. -->
+  <section id="pricing" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Membership</span>
+        <h2>One simple plan</h2>
+        <p>Everything your child needs to learn, think and grow, in one membership.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Bright Healthy Minds Membership</h3>
+          <div class="price"><span class="amt">$9.99</span><span class="per">/month</span></div>
+          <ul class="incl">
+            <li>All lessons, for every age group</li>
+            <li>Quizzes with an explanation for every answer</li>
+            <li>Stories with good morals</li>
+            <li>Emotional intelligence activities</li>
+            <li>Progress tracking for parents <span class="soon">Coming soon</span></li>
+          </ul>
+          <a class="btn btn-block" href="#signup">Start membership - $9.99/mo</a>
+          <p class="fine">Online payments are not live yet. Sign up below to register your interest.</p>
+        </div>
+        <div class="reward">
+          <div class="reward-icon" aria-hidden="true">🎁</div>
+          <h3>Kids Reward: up to $3 back each month</h3>
+          <p>We want to celebrate effort! Kids who complete their monthly lessons and quizzes with good scores can earn <strong>up to $3 back each month</strong> as a reward gift.</p>
+          <p><strong>How to earn it:</strong> [criteria, e.g. complete all lessons with 80%+ quiz scores]</p>
+          <p class="fine">Note: Reward terms are still being finalized and will be shared before launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGN-UP FORM -->
+  <!-- NOTE: This form is NON-FUNCTIONAL (demo only). It does not send or store data anywhere.
+       Before launch it needs: (1) a form service or backend to receive sign-ups, and
+       (2) a payment processor such as Stripe for the $9.99/month membership.
+       COPPA: collect only the child's FIRST NAME and AGE RANGE. Never collect a child's email, address or photo. -->
+  <section id="signup">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Join</span>
+        <h2>Parent sign-up</h2>
+        <p>Parents and guardians only, please. We ask for your child's first name and age range, nothing more.</p>
+      </div>
+      <form class="form-card" action="#" method="post" id="signup-form">
+        <div class="form-grid">
+          <div class="field"><label for="pname">Parent's name</label><input id="pname" name="parent_name" type="text" autocomplete="name" placeholder="Your full name" required></div>
+          <div class="field"><label for="email">Parent's email</label><input id="email" name="parent_email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="phone">Phone <span class="opt">(optional)</span></label><input id="phone" name="parent_phone" type="tel" autocomplete="tel" placeholder="Your phone number"></div>
+          <div class="field"><label for="cname">Child's first name</label><input id="cname" name="child_first_name" type="text" autocomplete="off" placeholder="First name only" required></div>
+          <div class="field full"><label for="age">Child's age range</label>
+            <select id="age" name="child_age_range" required><option value="">Select age range</option><option>4–6</option><option>7–9</option><option>10–12</option></select></div>
+          <fieldset class="field full interests">
+            <legend>Interests <span class="opt">(choose any)</span></legend>
+            <label class="check"><input type="checkbox" name="interests" value="lessons"> Lessons</label>
+            <label class="check"><input type="checkbox" name="interests" value="stories"> Stories</label>
+            <label class="check"><input type="checkbox" name="interests" value="study"> Study Help</label>
+            <label class="check"><input type="checkbox" name="interests" value="ei"> Emotional Intelligence</label>
+            <label class="check"><input type="checkbox" name="interests" value="thinking"> Critical Thinking</label>
+            <label class="check"><input type="checkbox" name="interests" value="life"> Life Skills</label>
+          </fieldset>
+          <label class="check consent full"><input type="checkbox" name="parental_consent" id="consent" required> <span>I am the parent or guardian and agree to the <a href="#">[Terms]</a> and <a href="#">[Privacy policy]</a>.</span></label>
+        </div>
+        <p class="demo-note">Demo form: sign-ups and payments are not connected yet, so no data is sent.</p>
+        <div class="form-foot">
+          <small>We never ask for your child's email, address or photo.</small>
+          <button class="btn" type="submit">Start membership - $9.99/mo</button>
+        </div>
+        <p class="form-msg" id="form-msg" role="status" hidden>Thanks! This is a demo form, so nothing was sent. Sign-ups open soon.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER: contact details are placeholders. Replace before launch. -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo"><span aria-hidden="true">🌟</span>Bright Healthy Minds</div>
+        <p>Lessons, stories and emotional learning for kids ages 4–12.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul><li><a href="#offer">What we offer</a></li><li><a href="#how">How it works</a></li><li><a href="#ages">Age groups</a></li><li><a href="#lessons">Sample lessons</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#signup">Sign up</a></li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul><li>[Your email]</li><li>[Your phone]</li><li>[Your social links]</li></ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Bright Healthy Minds. All rights reserved. · [Privacy policy] · [Terms]</p>
+  </div>
+</footer>
+<script>
+/* Sample-lesson quizzes: plain vanilla JS, no libraries. */
+(function(){
+  var QUIZZES = {
+    feelings: [{"q":"Your tummy feels tight and your heart beats fast right before a spelling test. Which feeling is this most likely?","a":["Worried or nervous","Sleepy","Bored"],"c":0,"exp":"A tight tummy and a fast heartbeat are common body clues for feeling worried or nervous, especially right before something important like a test.","hint":"Put two clues together: what your body is doing, and what is about to happen."},{"q":"You feel a big, angry feeling starting. What is a good first step?","a":["Shout at the nearest person","Pretend nothing is happening","Stop and take slow, deep breaths"],"c":2,"exp":"Stopping and breathing slowly helps your body calm down so you can think clearly. Shouting can hurt others, and pretending doesn't make the feeling go away.","hint":"Remember the steps from the lesson: Stop. Breathe. Talk."},{"q":"Is it okay to feel sad sometimes?","a":["No, you should always feel happy","Yes. All feelings are okay, and we choose what we do with them","Only grown-ups feel sad"],"c":1,"exp":"Everyone feels sad sometimes, kids and grown-ups too. Feelings are okay to have. What matters is how we act, like talking to someone we trust.","hint":"Think about what the lesson said about every feeling."}],
+    thinking: [{"q":"Which one of these is a FACT?","a":["Pizza is the best food","A week has seven days","Blue is the prettiest color"],"c":1,"exp":"\"A week has seven days\" can be checked on any calendar, so it's a fact. The other two are opinions: people can disagree about the best food or prettiest color.","hint":"Ask yourself: can this be checked and proven true, or is it what someone likes?"},{"q":"An ad says, \"This toy will make you the smartest kid in the world!\" What is the best thinking move?","a":["Ask, \"How do they know? Is there proof?\"","Believe it, because it's in an ad","Buy the toy right away"],"c":0,"exp":"Ads are made to make you want things, so a good thinker asks for proof before believing a big claim.","hint":"Use detective step 2: ask questions before you decide."},{"q":"Your sandcastle near the water is flattened, and the sand around it is wet and smooth. What is the best guess?","a":["A giant must have stepped on it","There's no way to ever figure it out","The waves probably washed over it"],"c":2,"exp":"Wet, smooth sand is a clue that water reached the castle. Waves are the explanation that matches the clues best.","hint":"Detectives pick the answer that fits the clues, not the most exciting one."}],
+    story: [{"q":"Why did the lion let the mouse go?","a":["He was scared of the mouse","The mouse gave him gold","The mouse asked kindly, and the lion decided to be kind"],"c":2,"exp":"In the story, the mouse asked to be let go, and even though the lion laughed, he chose to be kind and set her free.","hint":"Look back at the second part of the story: what did the lion decide to do?"},{"q":"How did the mouse help the lion?","a":["She roared to scare the hunters","She chewed through the ropes of the net","She ran to get other lions"],"c":1,"exp":"The mouse used her sharp little teeth to chew through the ropes until the lion was free.","hint":"Think about what a tiny mouse is really good at."},{"q":"What is the moral of the story?","a":["Kindness is never wasted, and nobody is too small to help","Big animals always win","You should never help anyone"],"c":0,"exp":"The lion's small act of kindness came back to help him. And the tiny mouse proved that even small friends can do big things.","hint":"A moral is the lesson the story teaches. Ask: what did the lion learn at the end?"}],
+    science: [{"q":"What causes day and night?","a":["The Sun travels around the Earth every day","The Earth spins, so different sides face the Sun","Clouds cover the Sun at night"],"c":1,"exp":"The Earth spins like a top. The side facing the Sun has day, and the side facing away has night. The Sun only looks like it moves.","hint":"Remember the lesson's secret: which one is really moving?"},{"q":"About how long does it take the Earth to spin around one time?","a":["About 1 hour","About 1 year","About 24 hours"],"c":2,"exp":"One full spin takes about 24 hours, which is one day. (A year is how long the Earth takes to travel all the way around the Sun.)","hint":"One spin makes one day. How many hours are in a day?"},{"q":"When it's daytime where you live, what is it like on the opposite side of the Earth?","a":["It's nighttime there","It's daytime there too","It's always noon everywhere"],"c":0,"exp":"The Sun lights only the half of the Earth facing it, so the opposite side is facing away from the Sun and has night.","hint":"Picture the flashlight and ball: if one side is lit, what about the other side?"}],
+    empathy: [{"q":"What is empathy?","a":["Understanding and caring about how someone else feels","Always agreeing with everyone","Being the best at everything"],"c":0,"exp":"Empathy means imagining how someone else feels and caring about it. You can still disagree with someone and show empathy.","hint":"Think about the saying \"walking in someone else's shoes.\" What does it ask you to imagine?"},{"q":"Your friend is sad because their pet is sick. What is the most caring thing to say?","a":["\"It's no big deal.\"","\"That sounds really hard. Do you want to talk about it?\"","\"Let's talk about my new game instead.\""],"c":1,"exp":"Saying it sounds hard shows you understand, and asking if they want to talk shows you care. Calling it \"no big deal\" or changing the subject can make a friend feel unheard.","hint":"Imagine your own pet was sick. Which words would help you feel better?"},{"q":"At recess, which clue tells you someone might feel left out?","a":["They are laughing with a group of friends","They are running around in a game","They are sitting alone, watching others play"],"c":2,"exp":"Sitting alone and watching others can be a clue that someone would like to join in. You could kindly ask, \"Want to play with us?\"","hint":"Use the Look step: what is the person's body telling you?"}],
+    anger: [{"q":"Is it okay to feel angry?","a":["No, you should never feel angry","Only if you win an argument","Yes. Anger is normal, and what matters is what we do with it"],"c":2,"exp":"Everyone feels angry sometimes. The feeling is okay. The choices we make, like calming down and using words, are what matter.","hint":"Remember the rule from the lesson: the feeling is okay, but hurting is not."},{"q":"Your little brother knocks down your block tower. Which is a calm-down choice?","a":["Take deep breaths and count slowly to 10","Knock down his things too","Throw a block at the wall"],"c":0,"exp":"Breathing and counting give your body time to cool down. Knocking his things down or throwing blocks could hurt people or things.","hint":"Which choice lowers the anger thermometer instead of making it go higher?"},{"q":"Which one is an \"I statement\"?","a":["\"You're the worst!\"","\"I feel angry when my tower gets knocked down because I worked hard on it.\"","\"Go away forever!\""],"c":1,"exp":"An I statement starts with \"I feel\" and explains why. It tells others how you feel without calling them names.","hint":"Look for the answer that follows the pattern \"I feel ___ when ___ because ___.\""}],
+    mindset: [{"q":"What does \"I can't do it yet\" mean?","a":["I will never be able to do it","I'm still learning, and I can get better with practice","I should give up now"],"c":1,"exp":"The word \"yet\" means you're on your way. You haven't learned it so far, but with practice you can.","hint":"Think about what the word \"yet\" adds to the sentence."},{"q":"You get a math problem wrong. Which is a growth mindset thought?","a":["\"Let me find where I went wrong and try again.\"","\"I'm just bad at math.\"","\"I'll hide my paper so nobody sees.\""],"c":0,"exp":"Looking for the mistake and trying again is how your brain learns. Mistakes show you what to practice.","hint":"Which thought helps you learn something from the mistake?"},{"q":"What helps your brain get stronger at something?","a":["Only doing things that are easy","Never trying anything new","Practicing, even when it feels hard"],"c":2,"exp":"Practice, especially on things that are a little hard, makes the connections in your brain stronger.","hint":"Remember how learning to ride a bike works."}],
+    online: [{"q":"A pop-up says, \"You won a free tablet! Click here and type your address!\" What should you do?","a":["Don't click it, and tell a trusted grown-up","Type your address quickly before it disappears","Send it to all your friends"],"c":0,"exp":"Pop-ups like this are tricks to get your information. The safe choice is not to click and to tell a grown-up.","hint":"Ask yourself: does this sound too good to be true?"},{"q":"Which of these is private information you should NOT share with strangers online?","a":["Your favorite color","Your favorite animal","Your home address"],"c":2,"exp":"Your home address tells people where you live, so it must stay private. Your favorite color or animal doesn't tell anyone how to find you.","hint":"Think: could this information help a stranger find me?"},{"q":"You see a photo online of a cat as big as a bus. What would a good thinker do?","a":["Believe it, because it's a photo","Remember photos can be edited, and check with a trusted source","Believe everything online"],"c":1,"exp":"Photos can be edited to show things that aren't real. Checking with a trusted grown-up or source is the smart move.","hint":"Use the third detective question: can I check it with a trusted source?"}],
+    tortoise: [{"q":"Why did the hare lose the race?","a":["The tortoise cheated","The hare hurt his leg","He stopped to take a nap because he was sure he would win"],"c":2,"exp":"The hare was so sure he would win that he took a nap, and the tortoise passed him while he slept.","hint":"Look back at the middle of the story: what did the hare do under the tree?"},{"q":"How did the tortoise win?","a":["He took a secret shortcut","He kept going one step at a time without giving up","He ran faster than the hare"],"c":1,"exp":"The tortoise moved slowly but never stopped. Steady effort got him to the finish line first.","hint":"Think about what the tortoise did while the hare was sleeping."},{"q":"What is the moral of the story?","a":["Keep going steadily, don't give up, and don't show off","Being fast is the only thing that matters","Napping is the best way to win"],"c":0,"exp":"The story teaches that steady effort beats showing off. The hare was faster, but the tortoise kept going.","hint":"A moral is the lesson the story teaches. What did the hare learn at the end?"}],
+    plants: [{"q":"Why do plants need sunlight?","a":["To make their own food","Only to stay warm","To help them fall asleep"],"c":0,"exp":"Plants use sunlight to make their own food (sugar) in a process called photosynthesis.","hint":"Remember: plants can't eat snacks like we do. How do they get food?"},{"q":"Which gas do plants give off that people and animals breathe?","a":["Smoke","Oxygen","Helium"],"c":1,"exp":"Plants give off oxygen while they make food. People and animals need oxygen to breathe.","hint":"Think about the gas you breathe in every second."},{"q":"Which three things does a plant use to make its food?","a":["Moonlight, sand and rocks","Juice, candy and soil only","Sunlight, water and carbon dioxide from the air"],"c":2,"exp":"Plants use sunlight, water from their roots and carbon dioxide from the air to make sugar for food.","hint":"Look back at the lesson's list of three things a plant needs."}],
+    fractions: [{"q":"A pizza is cut into 4 equal slices, and you eat 1 slice. What fraction did you eat?","a":["1/2","1/4","4/1"],"c":1,"exp":"The pizza has 4 equal parts (bottom number) and you ate 1 (top number), so you ate 1/4.","hint":"Bottom number = how many equal parts in all. Top number = how many you have."},{"q":"Which is bigger: 1/2 of a pizza or 1/4 of the same pizza?","a":["1/4","They are the same size","1/2"],"c":2,"exp":"Cutting a pizza into 2 pieces makes bigger pieces than cutting it into 4, so 1/2 is bigger than 1/4.","hint":"More pieces from the same pizza means each piece is smaller."},{"q":"How many quarters (1/4 pieces) make one half (1/2)?","a":["2","1","4"],"c":0,"exp":"If you cut a half in two equal parts, you get two quarters. So 2/4 is the same amount as 1/2.","hint":"Picture a pizza cut into 4 slices. How many slices cover half the pizza?"}],
+    money: [{"q":"Which one of these is a NEED?","a":["A video game","A toy robot","Healthy food"],"c":2,"exp":"Healthy food keeps our bodies alive and strong, so it's a need. Video games and toys are fun wants.","hint":"Ask: could I live and stay healthy without it?"},{"q":"Which one of these is a WANT?","a":["A new toy car","Clean water","A warm coat in winter"],"c":0,"exp":"A toy car is fun but not needed to stay healthy or safe, so it's a want. Water and a warm winter coat are needs.","hint":"Wants are nice to have, but we can live without them."},{"q":"You have $5 saved, and the toy you want costs $10. What's a smart plan?","a":["Give up on saving forever","Keep saving a little at a time until you have $10","Spend your $5 on candy right now"],"c":1,"exp":"Saving bit by bit helps you reach your goal. You need $5 more, so keep saving until you have $10.","hint":"Remember the Save jar: what is it for?"}]
+  };
+  var LETTERS = ["A","B","C","D"];
+  function el(tag, cls, text){var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e;}
+
+  function Quiz(box, qs){
+    var i=0, score=0;
+    function render(){
+      box.innerHTML="";
+      var head=el("div","quiz-head");
+      head.appendChild(el("span","quiz-title","✨ Quick Quiz"));
+      head.appendChild(el("span","quiz-progress","Question "+(i+1)+" of "+qs.length));
+      box.appendChild(head);
+      var bar=el("div","quiz-bar"); var fill=el("span"); fill.style.width=((i)/qs.length*100)+"%"; bar.appendChild(fill); box.appendChild(bar);
+      var item=qs[i];
+      box.appendChild(el("p","quiz-q",item.q));
+      var opts=el("div","quiz-opts");
+      item.a.forEach(function(txt,idx){
+        var b=el("button","quiz-opt"); b.type="button";
+        b.appendChild(el("span","letter",LETTERS[idx])); b.appendChild(el("span","",txt));
+        b.addEventListener("click",function(){answer(idx,opts)});
+        opts.appendChild(b);
+      });
+      box.appendChild(opts);
+    }
+    function answer(idx,opts){
+      var item=qs[i], right=idx===item.c;
+      if(right) score++;
+      Array.prototype.forEach.call(opts.children,function(b,k){
+        b.disabled=true;
+        if(k===item.c) b.classList.add("correct");
+        else if(k===idx) b.classList.add("wrong");
+      });
+      var fb=el("div","quiz-feedback "+(right?"ok":"no"));
+      fb.appendChild(el("p","fb-title",right?"✅ Correct! Great job!":"❌ Not quite. The answer is "+LETTERS[item.c]+"."));
+      fb.appendChild(el("p","fb-exp",item.exp));
+      var h=el("p","fb-hint"); h.appendChild(el("strong","","💡 How to think about it: ")); h.appendChild(document.createTextNode(item.hint));
+      fb.appendChild(h);
+      var next=el("button","btn quiz-next",i<qs.length-1?"Next question →":"See my score"); next.type="button";
+      next.addEventListener("click",function(){ i++; if(i<qs.length) render(); else finish(); });
+      fb.appendChild(next);
+      box.appendChild(fb);
+      next.focus({preventScroll:true});
+    }
+    function finish(){
+      box.innerHTML="";
+      var r=el("div","quiz-result");
+      r.appendChild(el("div","stars",score===qs.length?"🌟🌟🌟":score===2?"🌟🌟":score===1?"🌟":"💪"));
+      r.appendChild(el("p","score","You got "+score+" out of "+qs.length+"!"));
+      var msg = score===qs.length ? "Amazing! You really understood this lesson." :
+                score===2 ? "Great work! You're almost there. Read the lesson once more and try again." :
+                score===1 ? "Good effort! Every try helps your brain grow. Re-read the lesson and give it another go." :
+                "Learning takes practice, and that's okay! Read the lesson again and try once more. You can do it!";
+      r.appendChild(el("p","msg",msg));
+      var again=el("button","btn","Try again 🔁"); again.type="button";
+      again.addEventListener("click",function(){i=0;score=0;render();});
+      r.appendChild(again);
+      box.appendChild(r);
+    }
+    render();
+  }
+  document.querySelectorAll(".quiz[data-quiz]").forEach(function(box){
+    var qs=QUIZZES[box.getAttribute("data-quiz")]; if(qs) Quiz(box,qs);
+  });
+
+  /* Lesson library: filters + modal */
+  var grid=document.getElementById("lib-grid");
+  if(grid){
+    var items=grid.querySelectorAll(".lib-item"), count=document.getElementById("lib-count"), empty=document.getElementById("lib-empty");
+    var names={all:"all",feelings:"Feelings",thinking:"Thinking",stories:"Stories",science:"Science",math:"Math",life:"Life Skills"};
+    document.querySelectorAll(".filter").forEach(function(btn){
+      btn.addEventListener("click",function(){
+        var f=btn.getAttribute("data-filter"), n=0;
+        document.querySelectorAll(".filter").forEach(function(b){var on=b===btn;b.classList.toggle("active",on);b.setAttribute("aria-pressed",on?"true":"false");});
+        items.forEach(function(it){var show=f==="all"||it.getAttribute("data-cat")===f;it.hidden=!show;if(show)n++;});
+        count.textContent= f==="all" ? "Showing all "+n+" lessons" : "Showing "+n+" "+names[f]+" lesson"+(n===1?"":"s");
+        empty.hidden=n>0;
+      });
+    });
+    var modal=document.getElementById("lesson-modal"), body=document.getElementById("modal-body"),
+        store=document.getElementById("lesson-store"), panel=modal.querySelector(".modal-panel"), current=null, opener=null;
+    function openLesson(id,from){
+      var art=document.getElementById(id); if(!art) return;
+      if(current) store.appendChild(current);
+      body.appendChild(art); current=art; opener=from||null;
+      var h=art.querySelector("h3"); modal.setAttribute("aria-label",h?h.textContent:"Lesson");
+      modal.hidden=false; document.body.classList.add("modal-open");
+      panel.scrollTop=0;
+      modal.querySelector(".modal-close").focus({preventScroll:true});
+      if(history.replaceState) history.replaceState(null,"","#"+id);
+    }
+    function closeLesson(){
+      if(modal.hidden) return;
+      modal.hidden=true; document.body.classList.remove("modal-open");
+      if(current){store.appendChild(current);current=null;}
+      if(history.replaceState) history.replaceState(null,"","#lessons");
+      if(opener) opener.focus({preventScroll:true});
+    }
+    grid.querySelectorAll(".lib-card").forEach(function(card){
+      card.addEventListener("click",function(){openLesson(card.getAttribute("data-open"),card.querySelector(".lib-open"));});
+    });
+    modal.querySelectorAll("[data-close]").forEach(function(x){x.addEventListener("click",closeLesson);});
+    document.addEventListener("keydown",function(e){
+      if(modal.hidden) return;
+      if(e.key==="Escape") closeLesson();
+      if(e.key==="Tab"){ /* keep focus inside the modal */
+        var f=panel.querySelectorAll("button:not([disabled]),a[href]"); if(!f.length) return;
+        var first=f[0], last=f[f.length-1];
+        if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+        else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+      }
+    });
+    if(/^#lesson-/.test(location.hash)) openLesson(location.hash.slice(1));
+  }
+
+  /* Demo sign-up form: validates in the browser, then shows a notice. Nothing is sent. */
+  var form=document.getElementById("signup-form");
+  if(form) form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var m=document.getElementById("form-msg"); m.hidden=false;
+  });
+})();
+</script>
+</body>
+</html>
