@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brighthealthymind.github.io/sitemap.xml
